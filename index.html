@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/classic.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg_theme">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features 4</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <!-- nav-bar -->
+    <section class="banner" style="background: url(../images/banner.jpg);">
+        <div class="bn_overlay"></div>
+    </section>
+
+
+
+    <section class="main_area">
+        <div class="container 
+        +/ bg-white pt-3">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="controler pl-3 pt-0">
+                        <div class="control_head p-2 mb-3">
+                            <h2>Box Shadow Controler</h2>
+                        </div>
+                        <div class="singe_items">
+                            <div class="row align-items-center">
+                                <div class="col-10">
+                                    <label for="horigon">Horizontal Shadow Length</label>
+                                    <input type="range" min="-200" max="200" id="horigon" class="w-100 rng_com">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" id="horigonOut" value="0px" class="out_val">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="singe_items">
+                            <div class="row align-items-center">
+                                <div class="col-10">
+                                    <label for="range">Vertical Shadow Length</label>
+                                    <input type="range" min="-200" max="200" name="" id="vertical" class="w-100 rng_com">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" id="vertiOut" value="0px" class="out_val">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="singe_items">
+                            <div class="row align-items-center">
+                                <div class="col-10">
+                                    <label for="range">Blur Radius</label>
+                                    <input type="range"  min="0" maxlength="100" name="" id="range" class="w-100 rng_com">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" id="out" value="0px" class="out_val">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="singe_items">
+                            <div class="row align-items-center">
+                                <div class="col-10">
+                                    <label for="range">Spread Radius</label>
+                                    <input type="range" min="-200" maxlength="00" name="" id="spreadRadius" class="w-100 rng_com">
+                                </div>
+                                <div class="col-2">
+                                    <input type="text" id="spreadVal" value="0px" class="out_val">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        
+                        <div class="singe_items">
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <label for="">Shadow Color</label>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="color-picker"></div>
+                                </div>
+                                <div class="col-3 text-right pr-1 pr-0">
+                                    <input type="text" id="colorPick" value="10" class="col_val out_val">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singe_items mt-3">
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <label for="">Box Color</label>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="box-picker"></div>
+                                </div>
+                                <div class="col-3 text-right pr-1 pr-0">
+                                    <input type="text" id="colorPickTwo" value="10" class="col_val out_val">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singe_items mt-3">
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                                    <label for="">Background Color</label>
+                                </div>
+                                <div class="col-2 text-center">
+                                    <div class="bg-picker" style="border: 1px solid #ddd;"></div>
+                                </div>
+                                <div class="col-3 text-right pr-1 pr-0">
+                                    <input type="text" id="colorPickThree" value="10" class="col_val out_val">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-lg-7">
+                    <div class="output_area">
+                        <div class="box w-50">
+                            <h2>Copy your css from here:</h2>
+                            <textarea value="" class="output_valu"> </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pickr.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
